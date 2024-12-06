@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#library-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.book-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.book-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.book-card p {
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+button.remove-btn {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+button.remove-btn:hover {
+  background-color: #e04444;
+}
+
+button.toggle-read-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+button.toggle-read-btn:hover {
+  background-color: #45a049;
+}
+#book-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#book-form input,
+#book-form button {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+#book-form input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#book-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#book-form button:hover {
+  background-color: #0056b3;
+}
+@media (max-width: 600px) {
+  #library-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book-card {
+    width: 90%;
+  }
+}
